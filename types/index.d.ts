@@ -49,3 +49,21 @@ interface Feedback {
         }[];
     };
 }
+
+interface JobRoleMatch {
+    title: string;
+    matchPercentage: number;
+    summary: string;
+    keySkillsFound: string[];
+    missingSkills: string[];
+    salaryRange: string;
+    demandLevel: "High" | "Medium" | "Low";
+    industry: string;
+}
+
+interface JobMatchResult {
+    roles: JobRoleMatch[];
+    topRole: string;
+    overallProfileStrength: number;
+    profileSummary: string;
+}

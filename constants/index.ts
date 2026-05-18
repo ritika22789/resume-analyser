@@ -239,3 +239,38 @@ export const prepareInstructions = ({jobTitle, jobDescription}: { jobTitle: stri
       ${AIResponseFormat}
       Return the analysis as an JSON object, without any other text and without the backticks.
       Do not include any other text or comments.`;
+
+export const prepareJobMatchInstructions = () =>
+  `You are an expert career counselor and talent acquisition specialist.
+  Analyze this resume carefully and identify the TOP 5 most suitable job roles for this candidate.
+  Base your analysis on their skills, experience, education, projects, and overall profile.
+
+  Return a JSON object in EXACTLY this format (no extra text, no backticks):
+  {
+    "roles": [
+      {
+        "title": "Job Role Title",
+        "matchPercentage": 92,
+        "summary": "2-sentence explanation of why this role fits the candidate",
+        "keySkillsFound": ["skill1", "skill2", "skill3", "skill4"],
+        "missingSkills": ["skill1", "skill2", "skill3"],
+        "salaryRange": "$70,000 - $100,000",
+        "demandLevel": "High",
+        "industry": "Technology"
+      }
+    ],
+    "topRole": "Best matching job role title",
+    "overallProfileStrength": 78,
+    "profileSummary": "2-3 sentence summary of the candidate's overall professional profile and strengths"
+  }
+
+  RULES:
+  - Return exactly 5 roles, ordered from highest to lowest match percentage
+  - matchPercentage must be between 40 and 98 — be honest, not inflated
+  - overallProfileStrength is 0-100 based on the resume quality overall
+  - demandLevel must be exactly "High", "Medium", or "Low"
+  - keySkillsFound: 3-5 skills from the resume relevant to that role
+  - missingSkills: 2-4 skills the candidate lacks for that role
+  - salaryRange: realistic USD annual range for that role
+  - Return ONLY valid JSON, nothing else`;
+
