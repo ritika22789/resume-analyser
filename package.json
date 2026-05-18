@@ -22,7 +22,6 @@
     "zustand": "^5.0.6"
   },
   "devDependencies": {
-    "@netlify/vite-plugin-react-router": "^3.1.1",
     "@react-router/dev": "^7.5.3",
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
