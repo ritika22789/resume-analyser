@@ -1,135 +1,212 @@
-<div align="center">
-  <br />
-    <a href="https://www.youtube.com/watch?v=iYOz165wGkQ" target="_blank">
-      <img src="public/readme/hero.webp" alt="Project Banner">
-    </a>
-  <br />
+# 🧠 Resumind — AI Resume Analyzer & Job Matcher
 
-  <div>
-    <img alt="Static Badge" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white">
-        <img src="https://img.shields.io/badge/-Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-        <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
-    <img alt="Static Badge" src="https://img.shields.io/badge/Puter.js-181758?style=for-the-badge&logoColor=white">
-  </div>
+> Upload your resume. Get AI-powered feedback. Discover the jobs you're made for.
 
-  <h3 align="center">AI Resume Analyzer</h3>
+**Resumind** is a smart web application that analyzes your resume using Artificial Intelligence and helps you understand how strong it is, what to improve, and which job roles you are best suited for — complete with **live job listings** from LinkedIn, Indeed, and Glassdoor.
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/watch?v=XUkNR-JfHwo" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
+---
 
-## 📋 <a name="table">Table of Contents</a>
+## 🌟 What Does This App Do?
 
-1. ✨ [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
-6. 🚀 [More](#more)
+Think of Resumind as your personal career coach. Here's what it does in simple terms:
 
-## 🚨 Tutorial
+1. **You upload your resume** (as a PDF file)
+2. **The AI reads it** and scores it across 5 key areas
+3. **You get detailed feedback** on what's good and what needs improvement
+4. **The Job Matcher finds your best-fit roles** — no job description needed
+5. **Live job listings appear** from real companies hiring for those roles right now
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+---
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+## ✨ Key Features
 
-<a href="https://www.youtube.com/watch?v=iYOz165wGkQ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+### 📊 Resume Score & Feedback
+- Your resume gets an **overall score out of 100**
+- Broken down into 5 categories:
+  - **ATS Compatibility** — will a company's hiring software even see your resume?
+  - **Tone & Style** — does it sound professional?
+  - **Content Quality** — is the information strong and relevant?
+  - **Resume Structure** — is it organized clearly?
+  - **Skills Alignment** — do your skills match what employers want?
+- Each category comes with specific tips to improve
 
-## <a name="introduction">✨ Introduction</a>
+### 🎯 Job Role Matcher
+- Upload your resume and the AI suggests the **top 5 job roles** you're best suited for
+- See your **match percentage** for each role (e.g. "87% match for Software Engineer")
+- Find out which skills you already have ✅ and which ones you're missing ❌
+- Get the **expected salary range** and **job demand level** for each role
+- No job description needed — it works purely from your resume
 
-Build an AI-powered Resume Analyzer with React, React Router, and Puter.js! Implement seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each listing—all wrapped in a clean, reusable UI.
+### 💼 Live Job Listings
+- Each matched role shows **real job openings** from:
+  - **LinkedIn**
+  - **Indeed**
+  - **Glassdoor**
+  - **ZipRecruiter**
+- See company logos, locations, salary ranges, and remote options
+- Click **"Apply →"** to go directly to the job posting
+- Load more results with pagination
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
+### 📁 Resume Dashboard
+- All your analyzed resumes are saved in one place
+- View past analyses anytime
+- See scores at a glance on resume cards
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+### 🔐 Secure Authentication
+- Sign in with your Puter account — no password setup needed
+- Your resumes and data are stored privately and securely
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+---
 
-- **[React](https://react.dev/)** is a popular open‑source JavaScript library for building user interfaces using reusable components and a virtual DOM, enabling efficient, dynamic single-page and native apps.
+## 🖥️ Screenshots
 
-- **[React Router v7](https://reactrouter.com/)** is the go‑to routing library for React apps, offering nested routes, data loaders/actions, error boundaries, code splitting, and SSR support—all with a smooth upgrade path from v6.
+> **Home Dashboard** — All your resumes in one place
 
-- **[Puter.com](https://jsm.dev/resumind-puter)** is an advanced, open-source internet operating system designed to be feature-rich, exceptionally fast, and highly extensible. Puter can be used as: A privacy-first personal cloud to keep all your files, apps, and games in one secure place, accessible from anywhere at any time.
+> **Resume Analysis** — Detailed AI feedback with scores
 
-- **[Puter.js](https://jsm.dev/resumind-puterjs)** is a tiny client‑side SDK that adds serverless auth, storage, database, and AI (GPT, Claude, DALL·E, OCR…) straight into your browser app—no backend needed and costs borne by users.
+> **Job Role Matcher** — Your top 5 matched roles with live job listings
 
-- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows developers to design custom user interfaces by applying low-level utility classes directly in HTML, streamlining the design process.
+---
 
-- **[TypeScript](https://www.typescriptlang.org/)** is a superset of JavaScript that adds static typing, providing better tooling, code quality, and error detection for developers, making it ideal for building large-scale applications.
+## 🛠️ Tech Stack
 
-- **[Vite](https://vite.dev/)** is a fast build tool and dev server using native ES modules for instant startup, hot‑module replacement, and Rollup‑powered production builds—perfect for modern web development.
+| Technology | What It Does |
+|-----------|-------------|
+| **React** | Builds the user interface |
+| **React Router v7** | Handles navigation between pages |
+| **TypeScript** | Makes the code more reliable and error-free |
+| **Tailwind CSS** | Makes the app look beautiful |
+| **Puter.js** | Handles login, file storage, and AI — no backend server needed |
+| **Claude AI (Sonnet)** | The AI model that reads and analyzes resumes |
+| **JSearch API** | Fetches live job listings from LinkedIn, Indeed & Glassdoor |
+| **Vite** | Fast development and build tool |
+| **Zustand** | Manages app state efficiently |
 
-- **[Zustand](https://github.com/pmndrs/zustand)** is a minimal, hook-based state management library for React. It lets you manage global state with zero boilerplate, no context providers, and excellent performance through selective state subscriptions.
+---
 
-## <a name="features">🔋 Features</a>
+## 🚀 Getting Started
 
-👉 **Easy & convenient auth**: Handle authentication entirely in the browser using Puter.js—no backend or setup required.
+### What You Need First
 
-👉 **Resume upload & storage**: Let users upload and store all their resumes in one place, safely and reliably.
+Before running this project, make sure you have these installed on your computer:
 
-👉 **AI resume matching**: Provide a job listing and get an ATS score with custom feedback tailored to each resume.
-
-👉 **Reusable, modern UI**: Built with clean, consistent components for a great-looking and maintainable interface.
-
-👉 **Code Reusability**: Leverage reusable components and a modular codebase for efficient development.
-
-👉 **Cross-Device Compatibility**: Fully responsive design that works seamlessly across all devices.
-
-👉 **Modern UI/UX**: Clean, responsive design built with Tailwind CSS and shadcn/ui for a sleek user experience.
-
-And many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
+- [Node.js](https://nodejs.org/en) (version 18 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+### Step 1 — Clone the Project
+
+Open your terminal and run:
 
 ```bash
-git clone https://github.com/adrianhajdin/ai-resume-analyzer.git
-cd ai-resume-analyzer
+git clone https://github.com/ritika22789/resume-analyser.git
+cd resume-analyser
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
+### Step 2 — Install Dependencies
 
 ```bash
 npm install
 ```
 
-**Running the Project**
+### Step 3 — Run the App
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+Then open your browser and go to: **http://localhost:5173**
 
-## <a name="links">🔗 Assets</a>
+That's it! The app will be running on your computer. 🎉
 
-Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/resumind-kit)**.
+---
 
-<a href="https://jsm.dev/resumind-kit" target="_blank">
-  <img src="public/readme/videokit.webp" alt="Video Kit Banner">
-</a>
+## 📖 How to Use the App
 
-## <a name="more">🚀 More</a>
+### Analyzing a Resume
 
-**Advance your skills with Next.js Pro Course**
+1. Go to the app and **sign in** with your Puter account (free)
+2. Click **"Upload Resume"** in the top navigation
+3. Fill in the job title and company name (optional but helpful)
+4. Upload your PDF resume
+5. Click **"Analyze Resume"**
+6. Wait a few seconds while the AI reads your resume
+7. View your detailed score and improvement tips
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
+### Using the Job Matcher
 
-<a href="https://jsm.dev/resumind-courses" target="_blank">
-  <img src="public/readme/jsmpro.webp" alt="Project Banner">
-</a>
+1. Click **"🎯 Job Matcher"** in the navigation bar
+2. Upload your resume PDF
+3. Click **"Find My Best Roles"**
+4. The AI will analyze your resume and show your **top 5 best-fit job roles**
+5. For each role, click **"💼 View live job openings"** to see real job listings
+6. Click **"Apply →"** on any job to go to the actual application page
+
+---
+
+## 📁 Project Structure
+
+```
+ai-resume-analyzer/
+├── app/
+│   ├── components/       # Reusable UI components
+│   │   ├── Navbar.tsx        # Navigation bar
+│   │   ├── JobListings.tsx   # Live job listings component
+│   │   ├── Summary.tsx       # Resume score summary
+│   │   └── ...
+│   ├── routes/           # Pages of the app
+│   │   ├── home.tsx          # Dashboard page
+│   │   ├── upload.tsx        # Resume upload page
+│   │   ├── resume.tsx        # Resume detail & feedback page
+│   │   └── match.tsx         # Job Role Matcher page
+│   └── lib/
+│       ├── puter.ts          # Puter.js integration (auth, storage, AI)
+│       └── jsearch.ts        # JSearch API for live job listings
+├── constants/
+│   └── index.ts          # AI prompt instructions
+└── types/
+    └── index.d.ts        # TypeScript type definitions
+```
+
+---
+
+## 🔑 APIs & Services Used
+
+| Service | Purpose | Cost |
+|---------|---------|------|
+| [Puter.js](https://puter.com) | Authentication, file storage, AI analysis | Free (user-pays model) |
+| [JSearch via RapidAPI](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) | Live job listings from LinkedIn/Indeed | Free tier: 200 req/month |
+| Claude AI (via Puter) | Resume analysis & job matching | Included with Puter |
+
+---
+
+## 🎓 About This Project
+
+This project was built as a **major college project** to demonstrate:
+
+- Full-stack web application development
+- AI/ML integration in real-world applications
+- Third-party API integration (JSearch for live job data)
+- Modern UI/UX design principles
+- State management in React applications
+- TypeScript for type-safe development
+
+---
+
+## 👩‍💻 Author
+
+**Ritika Mehta**
+- GitHub: [@ritika22789](https://github.com/ritika22789)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+  <p>Made with ❤️ for learning and career growth</p>
+  <p>⭐ Star this repo if you found it helpful!</p>
+</div>
